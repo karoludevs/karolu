@@ -7,7 +7,14 @@ public class Main
 	{
 		Account carlos = new Account();
 		Account alba = new Account();
+		VipCustomer vip = new VipCustomer();
+		
+
+		
+	
 		Scanner sentence = new Scanner(System.in);
+		
+		
 		
 		System.out.println("Welcome to Worldbank, please introduce your name account: ");
 		String name = sentence.nextLine();
