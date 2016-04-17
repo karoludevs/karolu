@@ -1,10 +1,19 @@
 public class Account
 {
-	private int number = 0;
+	private int number;
 	private int balance;
 	private String customer;
-	private String email = "vacio@gmail.com";
-	private int phone = 555334422;
+	private String email;
+	private int phone;
+	
+//	public Account(String customer, int number, int balance, String email, int phone){
+//		
+//		this.customer = customer;
+//		this.number = number;
+//		this.balance = balance;
+//		this.email = email;
+//		this.phone = phone;
+//	}
 	
 	public void printAll(){
 		System.out.println(" customer = " + customer +
