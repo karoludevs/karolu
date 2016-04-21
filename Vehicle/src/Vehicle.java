@@ -4,6 +4,9 @@ public class Vehicle
 	private int wheels;
 	private int frill;
 	
+	private int currentVelocity;
+	private String currentDirection;
+	
 
 	public Vehicle(String name, int wheels, int frill)
 	{
@@ -12,6 +15,13 @@ public class Vehicle
 		this.frill = frill;
 		
 		
+	}
+	
+	public void move(int velocity, String direction){
+		this.currentVelocity = velocity;
+		this.currentDirection = direction;
+		System.out.println("the current velocity is " + currentVelocity + 
+						   " km/h " + "and the direction is " + currentDirection);
 	}
 
 	public void setName(String name)
@@ -45,7 +55,5 @@ public class Vehicle
 	}
 
 	
-	public double move(){
-		return move();
-	}
+	
 }

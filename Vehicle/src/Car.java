@@ -1,7 +1,5 @@
-public class Car
-{
-	public class Car extends Vehicle{
-		
+public class Car extends Vehicle{
+
 		private String motor;
 		private int doors;
 		private int windows;
@@ -18,6 +16,10 @@ public class Car
 			this.speed = speed;
 			
 			
+		}
+		
+		public void velocity(int speed, String direction){
+			move(speed, direction); 
 		}
 
 		public void setMotor(String motor)
@@ -73,5 +75,5 @@ public class Car
 		}
 		
 		
-	}
+	
 }
