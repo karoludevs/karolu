@@ -1,5 +1,4 @@
-public class HondaEv
-{
+
 	public class HondaEv extends Car{
 	
 	private String motorType;
@@ -7,7 +6,7 @@ public class HondaEv
 
 		public HondaEv( String motorType, int autonomy)
 		{
-			
+			super("hybrid", 2, 4, 6, 210);
 			this.motorType = motorType;
 			this.autonomy = autonomy;
 		}
@@ -35,4 +34,4 @@ public class HondaEv
 	
 	
 	}
-}
+

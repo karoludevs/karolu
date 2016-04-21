@@ -1,5 +1,4 @@
-public class Car
-{
+
 	public class Car extends Vehicle{
 		
 		private String motor;
@@ -74,4 +73,4 @@ public class Car
 		
 		
 	}
-}
+

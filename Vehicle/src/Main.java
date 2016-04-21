@@ -5,7 +5,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		Vehicle coche = new Vehicle("coche", 4, 1);
-		Car honda = new Car();
+		Car honda = new Car("hybrid", 4, 6, 6, 220);
 		System.out.println(coche.getName());
 		
 //		Scanner input = new Scanner(System.in);
