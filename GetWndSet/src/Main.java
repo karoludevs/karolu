@@ -5,18 +5,19 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		Account carlos = new Account();
-		Account alba = new Account();
-		VipCustomer vip = new VipCustomer();
+		Account carlos = new Account(1, 4000, "Default name", "Default email", 646468643);
+		Account alba = new Account(1, 4000, "Default name", "Default email", 646468643);
+		//VipCustomer vip = new VipCustomer();
 		
-
+		carlos.printAll();
+		alba.printAll();
 		
 	
 		Scanner sentence = new Scanner(System.in);
 		
 		
 		
-		System.out.println("Welcome to Worldbank, please introduce your name account: ");
+		/*System.out.println("Welcome to Worldbank, please introduce your name account: ");
 		String name = sentence.nextLine();
 		System.out.println("\nSu email porfavor?: ");
 		String email = sentence.nextLine();
@@ -24,6 +25,7 @@ public class Main
 		int phone = sentence.nextInt();
 		System.out.println("\nQue desea? deposit o withdraw o salir (d/w/s)?:");
 		String opcion = sentence.next();
+
 		
 		
 		if (name.equals("carlos")){
@@ -63,7 +65,7 @@ public class Main
 		}else if(opcion.equals("s")){
 			System.out.println("Gracias por su confianza");
 		}
-		
+		*/
 		
 	}
 }

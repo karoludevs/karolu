@@ -5,6 +5,19 @@ public class Account
 	private String customer;
 	private String email = "vacio@gmail.com";
 	private int phone = 555334422;
+
+	/*public Account(){
+		this(1, 4000, "Default name", "Default email", 646468643);
+	}*/
+
+	public Account(int number, int balance, String customer, String email, int phone){
+
+		this.number = number;
+		this.balance = balance;
+		this.customer = customer;
+		this.email = email;
+		this.phone = phone;
+	}
 	
 	public void printAll(){
 		System.out.println(" customer = " + customer +
