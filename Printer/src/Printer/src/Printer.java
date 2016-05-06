@@ -1,6 +1,6 @@
 public class Printer {
 
-		private int tonerLevel;
+		private double tonerLevel;
 		private int numPagePrinted;
 		private boolean duplex;
 
@@ -10,34 +10,35 @@ public class Printer {
 			this.duplex = duplex;
 		}
 
-		public void print(int pageToPrint) {
+		public void print(double pageToPrint) {
 			this.numPagePrinted += pageToPrint;
-			System.out.println("Han sido imprimidas en total " + numPagePrinted);
-			this.tonerLevel = tonerLevel - (this.numPagePrinted/10);
-			if(tonerLevel > this.tonerLevel){
-			for (int i = 100; i <= 1000; i+=100)
-				if (this.numPagePrinted >= i && this.numPagePrinted <= 100+i) {
-					System.out.println("Toner al " + this.tonerLevel + "%");
-					setTonerLevel(this.tonerLevel);
-			}else if(this.numPagePrinted < 100){
-					this.tonerLevel = tonerLevel - (this.numPagePrinted/10);
-					System.out.println("Toner al " + this.tonerLevel + "%");
-					break;
+			
+			double newTonerLevel = tonerLevel - (pageToPrint/10);
+		if(this.tonerLevel >= newTonerLevel && newTonerLevel >= 0){
+			//for (int i = 100; i <= 1000; i+=100)
+			//	if (this.numPagePrinted >= i && this.numPagePrinted <= 100+i) {
+				System.out.println("\nHan sido imprimidas en total " + numPagePrinted);
+					System.out.println("Toner al " + newTonerLevel + "%");
+					setTonerLevel(newTonerLevel);
+		//	}else if(this.numPagePrinted < 100){
+					//this.tonerLevel = tonerLevel - (this.numPagePrinted/10);
+			//		System.out.println("Toner al " + newTonerLevel + "%");
+			//		break;
 			}else if(this.numPagePrinted == 0 && tonerLevel == 100){
 					System.out.println("Toner al " + 100 + "%");
-					break;
-				}
+				//	break;
+			//	}
 		}else{
-			System.out.println("Quiere imprimir " + pageToPrint + " paginas." + "\nNivel del toner insuficiente para la impresion.");
+			System.out.println("\nQuiere imprimir " + pageToPrint + " paginas." + "\nNivel del toner insuficiente para la impresion.");
 		}
 		}
 
-		public int getTonerLevel() {
+		public double getTonerLevel() {
 			System.out.println("El nivel del toner está al " + tonerLevel + "%");
 			return tonerLevel;
 		}
 
-		public void setTonerLevel(int tonerLevel) {
+		public void setTonerLevel(double tonerLevel) {
 			this.tonerLevel = tonerLevel;
 		}
 
