@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args){
 
         Printer hp = new Printer(80, 115, true);
-        hp.print(200);
+        hp.print(120);
         hp.getNumPagePrinted();
         hp.getTonerLevel();
     }
