@@ -3,8 +3,6 @@
  */
 public class Printer {
 
-
-
     private int tonerLevel;
     private int numPagePrinted;
     private boolean duplex;

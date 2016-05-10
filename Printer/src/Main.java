@@ -9,5 +9,6 @@ public class Main {
         hp.print(120);
         hp.getNumPagePrinted();
         hp.getTonerLevel();
+		
     }
 }
