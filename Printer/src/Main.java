@@ -1,14 +1,19 @@
-/**
- * Created by sam on 2/05/16.
- */
-public class Main {
+import java.util.*;
 
-    public static void main(String[] args){
 
-        Printer hp = new Printer(80, 115, true);
-        hp.print(120);
-        hp.getNumPagePrinted();
-        hp.getTonerLevel();
-		
-    }
+	public class Main {
+
+		public static void main(String[] args){
+		Scanner teclado = new Scanner(System.in);
+			
+			Printer hp = new Printer(0, 0, true);
+			hp.getTonerLevel();
+			hp.getNumPagePrinted();
+			System.out.println("Introduce un numero de paginas a imprimir: ");
+			double numpag = teclado.nextDouble();
+			hp.print(numpag);
+			
+			
+
+		}
 }
