@@ -1,9 +1,18 @@
 public class Burguer
 {
+	private int price;
 	private String rollType;
-	private boolean meat;
-	private boolean lettuce;
-	private boolean tomato;
-	private boolean carrot;
-	private boolean egg;
+	private String meat;
+	private String lettuce;
+	private String tomato;
+	private String carrot;
+	private String egg;
+
+	public Burguer(String rollType, String meat, int price)
+	{
+		this.rollType = rollType;
+		this.meat = meat;
+		this.price = price;
+		
+	}
 }
