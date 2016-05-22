@@ -17,24 +17,29 @@ public class Burguer
 		
 	}
 	
-	public void addPrice(){
-		price += add;
+	public void addPrice(double add){
+		this.price += add;
 		
 	}
 	
 	public void addIngredient(String ingredient){
 		
-		command += ingredient;
+		this.command += ingredient + "\n";
+		
 		
 	}
 	public String command(){
 		//System.out.println(rollType + this.meat + lettuce + tomato + carrot + egg);
-		return rollType + "\n" + meat + "\n" + lettuce + "\n" + tomato + "\n" + carrot + "\n" + egg;
+		return command; //"\n" + rollType + "\n" + meat + "\n" + lettuce + "\n" + tomato + "\n" + carrot + "\n" + egg;
+	}
+	
+	public double printPrice(){
+		return price;
 	}
 
-	public void setLettuce(double lettuce)
+	public void setLettuce()
 	{
-		this.lettuce = lettuce;
+		addPrice(this.lettuce);
 	}
 
 	public double getLettuce()
@@ -42,9 +47,9 @@ public class Burguer
 		return lettuce;
 	}
 
-	public void setTomato(double tomato)
+	public void setTomato()
 	{
-		this.tomato = tomato;
+		addPrice(this.tomato);
 	}
 
 	public double getTomato()
@@ -52,9 +57,9 @@ public class Burguer
 		return tomato;
 	}
 
-	public void setCarrot(double carrot)
+	public void setCarrot()
 	{
-		this.carrot = carrot;
+		addPrice(this.carrot);
 	}
 
 	public double getCarrot()
@@ -62,9 +67,9 @@ public class Burguer
 		return carrot;
 	}
 
-	public void setEgg(double egg)
+	public void setEgg()
 	{
-		this.egg = egg;
+		addPrice(this.egg);
 	}
 
 	public double getEgg()
