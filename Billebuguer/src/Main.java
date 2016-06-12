@@ -12,6 +12,7 @@ public class Main
 		String more = "y";
 		while(more.equals("y")){
 			System.out.println("Hello, welcome to BillBurguer."
+<<<<<<< HEAD
 							   +
 							   "\nWhat type of burguer do you prefer?" +
 							   "\n1.Normal(n) \n2.Deluxe(d) ");
@@ -23,6 +24,19 @@ public class Main
 
                 System.out.println("\nWhat type of drink do you prefer?" +
 								   "\n1.Water(w) \n2.Cola(c) ");
+=======
+			+
+							   "\nWhat type of burguer do you prefer?" +
+							   "\n1.Normal(n) \n2.Deluxe(d) ");
+			String type = input.nextLine();
+            if (type.equals("d")){
+                System.out.println("\nWhat type of chips do you prefer?" +
+                        "\n1.Normal(n) \n2.Deluxe(d) ");
+                String chipsType = input.nextLine();
+
+                System.out.println("\nWhat type of drink do you prefer?" +
+                        "\n1.Water(w) \n2.Cola(c) ");
+>>>>>>> branch 'master' of https://github.com/karoludevs/karolu.git
                 String drinkType = input.nextLine();
 
             }
