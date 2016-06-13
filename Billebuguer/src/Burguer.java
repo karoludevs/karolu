@@ -16,12 +16,12 @@ public class Burguer
 		this.meat = meat;
 		this.basePrice = price;
 		this.addedPrice = price;
-		
+
 	}
-	
+
 	public void addPrice(double add){
 		this.addedPrice +=  add;
-		
+
 	}
 
 	public double printPrice(){
@@ -34,11 +34,11 @@ public class Burguer
 		System.out.println("a " + basePrice + "$ sale" + "\n" + meat + " burguer" + "\nRolltype " + rollType);
 
 	}
-	
+
 	public void addIngredient(String ingredient){
-		
+
 		this.command += "\n" + ingredient + "\n";
-		
+
 	}
 	public String command(){
 
