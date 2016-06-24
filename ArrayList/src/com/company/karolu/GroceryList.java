@@ -14,14 +14,14 @@ public class GroceryList {
     }
 
     public void printGroseryList() {
-            if (groceryList.contains(0)) {
-                System.out.println("The list is empty");
-
-            } else {
+            //if (groceryList.contains(0)) {
+                //System.out.println("The list is empty");
+        System.out.println("You have " + groceryList.size() + " items in your list");
+            //} else {
                 for (int i = 0; i < groceryList.size(); i++) {
                     System.out.println(i + 1 + ". " + groceryList.get(i) + "\n");
 
-            }
+            //}
         }
     }
 
@@ -34,11 +34,15 @@ public class GroceryList {
         }
     }
 
-    public String modifyGroceryItem(int position, String newItem){
+    public void modifyGroceryItem(int position, String newItem){
         groceryList.set(position, newItem);
-        return newItem;
+        System.out.println("The " + (1 + position) + " item has been modified for " + newItem);
+
     }
 
+    public void eraseGroceryItem(String item){
+        groceryList.remove(item);
+    }
     }
 
 
